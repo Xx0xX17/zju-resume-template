@@ -15,7 +15,7 @@
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \usepackage{enumitem}
-\CJKsetecglue{} 
+% \CJKsetecglue{} 
 
 % --- 字体设置 (保持原模版) ---
 \setmainfont[Path = fonts/Main/, Extension = .otf, BoldFont = texgyretermes-bold.otf]{texgyretermes-regular.otf}
@@ -46,7 +46,7 @@
 %%%% 4. 添加相片代码 %%%%
 %%%% 请确保文件 avatar.jpg 在仓库根目录下，且不要在之后立刻跟\\ %%%%
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-1.5cm,-1.5cm)$) {\includegraphics[height=3.2cm]{myphoto.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-1.5cm,-1.5cm)$) {\includegraphics[height=3.2cm]{photo.jpg}};
   \end{tikzpicture}%
 % =======================================================================
 
@@ -54,7 +54,6 @@
 \vspace{1.0em} % 给相片腾出顶部空间
 {\LARGE\bfseries{谢宛值}} \hfill \\ % 名字靠左
 \normalsize{\faPhone\ 19033955091 \quad \faEnvelopeO\ \href{mailto:3240105510@zju.edu.cn}{3240105510@zju.edu.cn}} \hfill \\ % 信息靠左
-
 
 \vspace{0.8em} % 增加姓名块与第一个 Section 的距离
 
