@@ -47,6 +47,7 @@
 
 % =======================================================================
 %%%% 重要修改 2: 图片插入代码优化 %%%%
+% 确保 picture.jpg 位于根目录，建议文件大小控制在 500KB 以内以避免 Actions 内存溢出
 \begin{tikzpicture}[remember picture, overlay]
     \node[anchor = north east] at ($(current page.north east)+(-1.5cm,-1.5cm)$) {\includegraphics[height=3.2cm]{picture.jpg}};
 \end{tikzpicture}
@@ -62,7 +63,7 @@
 % --- 教育背景 ---
 \section{\faGraduationCap\ 教育背景} 
 \textbf{浙江大学} \hfill 2024.09 -- 至今 \\
-软件工程\quad 本科（大二）
+软件工程\quad 本科（大二） \hfill \textbf{均绩：4.34}
 \begin{itemize}[nosep]
     \item \textbf{核心课程}：C程序设计(\textbf{5.0})、面向对象程序设计(\textbf{4.8})、现代软件工程实践(\textbf{5.0})、数据结构基础(\textbf{4.8})、高级数据结构与算法分析。
     \item \textbf{学术交流}：大一暑期赴\textbf{香港大学}进行为期一周的交流学习，深入研讨 6G 通信技术前沿。
@@ -80,11 +81,13 @@
 
 \vspace{0.6em}
 \textbf{现代软件工程综合实践：区块链系统模拟与分析} \hfill 2025.08 \\
-\textit{角色：核心开发者 \hfill \textbf{项目评级：5.0 / 5.0}}
+\textit{角色：核心开发者 \hfill \textbf{项目评级：5.0 / 5.0（满绩）}}
 \begin{itemize}[nosep]
     \item \textbf{协议研究}：深入研究比特币（Bitcoin）底层协议，包括 **UTXO 模型**、非对称加密（ECDSA）及 **SHA-256** 哈希算法，掌握区块链的去中心化核心原理。
-    \item \textbf{全链路实现}：运用 \textbf{Go/C++} 模拟实现从“水龙头（Faucet）”获取代币、构造原始交易、数字签名验证到广播入库的全流程，确保数据在分布式环境下的完整性。
-    \item \textbf{工程实践}：独立完成核心逻辑模块开发，遵循敏捷开发规范，设计并实现了一套高效的本地数据持久化方案，模拟并优化了高并发交易场景下的系统响应速度。
+    \item \textbf{全链路实现}：运用 \textbf{Python/C++} 模拟实现从“水龙头（Faucet）”获取代币、构造原始交易、数字签名验证到广播入库的全流程，确保数据在分布式环境下的完整性。
+    \item \textbf{DApp全栈开发}：搭建以太坊（Ethereum）开发环境，独立完成智能合约编写、编译与部署；设计并实现前端网页交互界面，实现 Web3 逻辑与链上程序的无缝通信。
+    \item \textbf{合约安全审计}：针对多类典型智能合约开展安全审计，深入分析并定位重入攻击、整数溢出等关键漏洞，提升了去中心化应用的系统健壮性与逻辑安全性。
+    \item \textbf{工程实践优化}：遵循敏捷开发规范，通过优化本地数据持久化方案与并发处理逻辑，显著提升了模拟高并发交易场景下的系统响应速度。
 \end{itemize}
 
 \vspace{0.6em}
@@ -101,6 +104,7 @@
     \item \textbf{前沿探索}：自学机器学习与神经网络，目前正深入研读\textbf{脑机接口 (BCI)}领域论文。
     \item \textbf{专业奖项}：浙江省大学生物理创新竞赛（理论） \textbf{三等奖}。
     \item \textbf{学校奖项}：浙江大学三等奖学金。
+    \item \textbf{英语水平}：\textbf{CET-4: 581分}（优秀），\textbf{CET-6: 513分}。
 \end{itemize}
 
 % --- 综合素质 ---
@@ -108,6 +112,7 @@
 \begin{itemize}[nosep]
     \item \textbf{学生工作}：云峰学风建设与学业指导中心 \textbf{学术文化部副部长}，负责大型学术活动策划；班级宣传委员，荣获优秀班干部。
     \item \textbf{自驱力}：具备强烈的自驱力与好奇心，拥有很好的自学能力和动手能力。
+    \item \textbf{社会实践工作}：大一暑假参加了金华市西联乡小学支教，大二寒假担任队长组织红色研学实践活动。
 \end{itemize}
 
 \end{document}
